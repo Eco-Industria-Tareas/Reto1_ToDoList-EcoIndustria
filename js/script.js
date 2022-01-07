@@ -1,4 +1,3 @@
-
 const aviso = document.querySelector(".aviso");
 
 const addNewTask = event => {
@@ -52,8 +51,3 @@ const order = () => {
     return [...toDo, ...done];
 
 }
-
-
-
-
-
