@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de tareas</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    
+    <title>Eco Industria - Reto 1</title>
 </head>
 <body>
+    <!-- Crear un contenedor padre -->
     <div class="list roundBorder">
 
+        <!-- Crear el título e icono como independiente  -->
         <h1>To-do List <img src="images/pencil1.png" alt="pencil1" width="8%"></h1>
-    
+        
+        <!-- Crear Form con input tipo texto con el botón  -->
         <form onsubmit="addNewTask(event)" >
             <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
             <button type="submit" class="addTaskButton">Add new</button>
             
         </form>
 
-        <div id="tasksContainer">
-        </div>
+        <!-- Contenedor vacío para que se almacenen las tareas que el usuario ingrese-->
+        <div id="tasksContainer"> </div>
 
+        <!-- Crear un mensaje que aparezca cuando no haya ninguna tarea -->
         <div class="aviso">
             <p>No tienes tareas pendientes.</p>
         </div>
     </div>
    
+    <!-- Link para el sript -->
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* Importar vars */
 @import url(vars.css);
 
 body {
@@ -6,10 +7,12 @@ body {
 }
 
 h1,p{
+  /* Centrar texto */
   text-align: center;
 }
 
 .roundBorder {
+  /* Borde redondeado para los divs mediante una clase */
   border-radius: 5px;
 }
 
@@ -18,14 +21,15 @@ h1,p{
   padding: 25px;
   background-color: var(--light);
   width: 100%;
+  /* Definir un tamaño maximo */
   max-width: 350px;
 }
 
 form{
+  /* Agregar flexbox para evitar márgenes para el input y buttom */
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-
 }
 
 input {
@@ -55,6 +59,7 @@ input {
   color: var(--light);
   cursor: pointer;
   
+  /*Agregar Flexbox para que el DeleteButton y la tarea (texto) se vaya a los extremos*/
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -62,12 +67,15 @@ input {
 }
 
 .done {
+  /*Estilos que servirá a que el estado de la tarea cambie junto con la funcion que se declaro en JavaScript */
+  
+  /*Se cambiará a color verde cuando la tarea ya este realizada y se tachará*/
   background-color: var(--primary);
   text-decoration: line-through;
-  color: var(--dark);
+  color: var(--dark); /*Color de tachado porque por defecto viene con el color de la letra (en este caso es blanca y no se distinguirá)*/
 }
 
-
+/*Estilos de Botón de "Eliminar Tarea"*/
 .btn-delete {
   border: none;
   color: #ffffff;
@@ -80,6 +88,7 @@ input {
   border-radius: 5px;
 }
 
+/*Cuando el cursor esté en el botón se tendrá que mostrar con menos transparencia*/
 .btn-delete:hover {
   cursor: pointer;
   background-color: #0000007e;
