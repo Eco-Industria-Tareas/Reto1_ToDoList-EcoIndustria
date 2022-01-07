@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <div class="list roundBorder">
+
+        <h1>To-do List <img src="images/pencil.png" alt="pencil" width="8%"></h1>
+    
+        <form onsubmit="addNewTask(event)" >
+            <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+            <button type="submit" class="addTaskButton">Add new</button>
+            
+        </form>
+
+        <div id="tasksContainer">
+
+
+        </div>
+
+        <div class="aviso">
+            <p>No tienes tareas pendientes.</p>
+        </div>
+
+    </div>
+   
+    <script src="js/script.js"></script>
+</body>
+</html>

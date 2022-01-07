@@ -1,0 +1,86 @@
+@import url(vars.css);
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--backgroud);
+}
+
+h1,p{
+  text-align: center;
+}
+
+.roundBorder {
+  border-radius: 5px;
+}
+
+.list {
+  margin: 10vh auto;
+  padding: 25px;
+  background-color: var(--light);
+  width: 100%;
+  max-width: 350px;
+}
+
+form{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+}
+
+input {
+  width: 35vh;
+  height: 35px;
+  border: none;
+  background-color: var(--backgroud);
+  padding-left: 10px;
+}
+
+.addTaskButton{
+  width: 15vh;
+  height: 35px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.task {
+  background-color: var(--secondary);
+  padding: 15px;
+  margin-top: 15px;
+  color: var(--light);
+  cursor: pointer;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.done {
+  background-color: var(--primary);
+  text-decoration: line-through;
+  color: var(--dark);
+}
+
+
+.btn-delete {
+  border: none;
+  color: #ffffff;
+  background-color: #0201011c;
+  font-weight: bold;
+  padding: 5px 10px;
+  outline: none;
+  width: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  background-color: #0000007e;
+}
