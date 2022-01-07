@@ -1,3 +1,4 @@
+
 const aviso = document.querySelector(".aviso");
 
 const addNewTask = event => {
@@ -13,7 +14,6 @@ const addNewTask = event => {
     task.appendChild(addDeleteBtn());
     
     aviso.style.display = "none";
-    
 };
 
 
@@ -37,7 +37,6 @@ function addDeleteBtn() {
 }
 
 
-
 //FUNCIÓN QUE NOS PERMITIRÁ MARCAR LA TAREA COMO REALIZADA O NO
 const changeTaskState = event => {
     event.target.classList.toggle('done');
@@ -51,6 +50,7 @@ const order = () => {
     })
     
     return [...toDo, ...done];
+
 }
 
 
